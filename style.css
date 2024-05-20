@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.feedback-container {
+  background-color: white;
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.emoji-container {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  width: 49px;
+  height: 50px;
+  display: flex;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.star-container {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.far {
+  margin: 1px;
+  transform: translateX(0);
+  transition: transform 0.2s;
+}
+
+.fa-star {
+  cursor: pointer;
+  color: grey;
+}
+
+.fa-solid.active {
+  color: gold;
+}
